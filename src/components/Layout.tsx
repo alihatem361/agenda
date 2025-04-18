@@ -87,7 +87,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="sticky top-0 z-50 w-full bg-background border-b border-border p-4 flex justify-between items-center">
             <div className="flex items-center">
               <Clock size={24} className="text-primary mr-2" />
-              <h1 className="text-xl font-bold">تايم تراك</h1>
+              <h1 className="text-xl font-bold">Agenda</h1>
             </div>
             <Sheet>
               <SheetTrigger asChild>
@@ -102,9 +102,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </SheetContent>
             </Sheet>
           </div>
-          <main className="flex-1 p-4">
-            {children}
-          </main>
+          <main className="flex-1 p-4">{children}</main>
         </>
       ) : (
         <>
@@ -112,9 +110,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <SidebarContent />
           </aside>
           <main className="flex-1 md:mr-64">
-            <div className="p-6 max-w-7xl mx-auto">
-              {children}
-            </div>
+            <div className="p-6 max-w-7xl mx-auto">{children}</div>
           </main>
         </>
       )}
